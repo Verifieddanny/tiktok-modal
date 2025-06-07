@@ -73,36 +73,6 @@ const TikTokModal = () => {
   return (
     <>
       <style jsx global>{`
-        @font-face {
-          font-family: "GT Walsheim Pro";
-          src: url("/fonts/GTWalsheimPro-Regular.woff2") format("woff2"),
-            url("/fonts/GTWalsheimPro-Regular.woff") format("woff");
-          font-weight: 400;
-          font-style: normal;
-          font-display: swap;
-        }
-        @font-face {
-          font-family: "GT Walsheim Pro";
-          src: url("/fonts/GTWalsheimPro-Medium.woff2") format("woff2"),
-            url("/fonts/GTWalsheimPro-Medium.woff") format("woff");
-          font-weight: 500;
-          font-style: normal;
-          font-display: swap;
-        }
-        @font-face {
-          font-family: "GT Walsheim Pro";
-          src: url("/fonts/GTWalsheimPro-Bold.woff2") format("woff2"),
-            url("/fonts/GTWalsheimPro-Bold.woff") format("woff");
-          font-weight: 700;
-          font-style: normal;
-          font-display: swap;
-        }
-
-        .gt-walsheim {
-          font-family: "GT Walsheim Pro", -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Roboto, sans-serif;
-        }
-
         @keyframes heartbeat {
           0% {
             transform: scale(1);
@@ -122,6 +92,7 @@ const TikTokModal = () => {
         }
         .animate-heartbeat {
           animation: heartbeat 1.5s ease-in-out infinite;
+          will-change: transform;
         }
 
         @keyframes pulse-slow {
@@ -140,6 +111,7 @@ const TikTokModal = () => {
         }
         .animate-pulse-slow {
           animation: pulse-slow 3s ease-in-out infinite;
+          will-change: transform;
         }
 
         @keyframes float-away {
@@ -162,6 +134,7 @@ const TikTokModal = () => {
         }
         .animate-float-away {
           animation: float-away 2s ease-out infinite;
+          will-change: transform;
         }
 
         @keyframes sparkle {
@@ -180,6 +153,7 @@ const TikTokModal = () => {
         }
         .animate-sparkle {
           animation: sparkle 2s ease-in-out infinite;
+          will-change: transform;
         }
       `}</style>
 

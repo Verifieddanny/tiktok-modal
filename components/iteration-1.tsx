@@ -64,38 +64,6 @@ const TikTokModalVariant1 = () => {
   return (
     <>
       <style jsx global>{`
-          @font-face {
-          font-family: "GT Walsheim Pro";
-          src: url("/fonts/GTWalsheimPro-Regular.woff2") format("woff2"),
-            url("/fonts/GTWalsheimPro-Regular.woff") format("woff");
-          font-weight: 400;
-          font-style: normal;
-          font-display: swap;
-          font-display: block;
-        }
-        @font-face {
-          font-family: "GT Walsheim Pro";
-          src: url("/fonts/GTWalsheimPro-Medium.woff2") format("woff2"),
-            url("/fonts/GTWalsheimPro-Medium.woff") format("woff");
-          font-weight: 500;
-          font-style: normal;
-          font-display: swap;
-          font-display: block;
-        }
-        @font-face {
-          font-family: "GT Walsheim Pro";
-          src: url("/fonts/GTWalsheimPro-Bold.woff2") format("woff2"),
-            url("/fonts/GTWalsheimPro-Bold.woff") format("woff");
-          font-weight: 700;
-          font-style: normal;
-          font-display: swap;
-          font-display: block;
-        }
-
-        .gt-walsheim {
-          font-family: "GT Walsheim Pro", -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Roboto, sans-serif;
-        }
         .gradient-bg-variant1 {
           background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
