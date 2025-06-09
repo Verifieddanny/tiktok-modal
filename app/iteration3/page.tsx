@@ -1,9 +1,9 @@
-import TikTokModalVariant1 from '@/components/iteration-1'
+import TikTokModalVariant2 from '@/components/iteration-2'
 import React from 'react'
 
 function Iteration() {
   return (
-    <TikTokModalVariant1 />
+    <TikTokModalVariant2 />
   )
 }
 
