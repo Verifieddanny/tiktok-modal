@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { GlowingEffect } from "@/components/ui/glowing-effect"
 import { Inter } from "next/font/google"
 import { TwitterIcon as TikTok } from "lucide-react"
+import Image from "next/image"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -84,11 +85,15 @@ export default function TikTokPopup() {
         <div className="relative flex flex-col overflow-hidden rounded-3xl border border-[#DEE5EE] bg-white">
           {/* Hero Image */}
           <div className="relative overflow-hidden">
-            <img
+            <Image
               src="/tiktok-hero.png"
               alt="TikTok Growth Service with UpGrow"
               className="h-[200px] w-full object-cover object-[center_5%]"
-              loading="lazy"
+              // loading="lazy"
+              width={800}
+              height={200}
+              priority
+              quality={100}
             />
           </div>
 
